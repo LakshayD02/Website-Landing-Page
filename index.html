@@ -1,64 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Assignment-2</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FastFindFirm - Front-End Web Development</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    <div class="main">
-        <div class="navbar">
-            <div class="icon">
-                <h3 class="logo">Fastfindfirms</h3>
+    <header>
+        <nav>
+            <div class="logo">FastFindFirm</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#register">Register/Sign In</a></li>
+            </ul>
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <button>Search</button>
             </div>
-
-            <div class="menu">
-                <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">SERVICES</a></li>
-                    <li><a href="#">REGISTER</a></li>
-                    <li><a href="#">CONTACT</a></li>
-                </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
             </div>
+        </nav>
+    </header>
 
-            <div class="search">
-                <input class="srch" type="search" name="" placeholder="Type Here">
-                <a href="#"> <button class="btn">Search</button></a>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>FastFindFirm <br>Tech Startup</h1>
+                <p>
+                    As a tech company, we at FastFindFirm believe in helping one another construct a brighter
+                    tomorrow by providing Professional Technological Assistance and growing the business ideas
+                    of all sizes of organizations and start-ups. We also assist clients with their projects and provide
+                    Internship Programs. We employ cutting-edge technology to address complex client issues and
+                    solve them efficiently.
+                </p>
+                <a href="#learn-more" class="cta-button">Learn More</a>
             </div>
+            <div class="register-form">
+                <h2>Register</h2>
+                <form id="register-form">
+                    <input type="text" placeholder="Full Name" required>
+                    <input type="email" placeholder="Email" required>
+                    <input type="password" placeholder="Password" required>
+                    <button type="submit">Register</button>
+                </form>
+                <p>Already have an account? <a href="#signin">Sign In</a></p>
+            </div>
+        </section>
+    </main>
 
-        </div> 
-        <div class="content">
-            <h1>Front-End Web <br><span>Development</span> <br>Project-2</h1>
-            <br><br>
-            <p class="par">As a tech company, we at FastFindFirm believe in helping one another construct a brighter <br> tomorrow by providing Professional Technological Assistance and growing the business ideas <br> of all sizes of organizations and start-ups. We also assist clients with their projects and provide <br> Internship Programs . 
-                We employ cutting-edge technology to address complex client issues and <br> solve them efficiently.</p>
+    <footer>
+        <p>&copy; 2023 FastFindFirm. All rights reserved.</p>
+    </footer>
 
-                <button class="cn"><a href="#">JOIN US</a></button>
-
-                <div class="form">
-                    <h2>Login Here</h2>
-                    <input type="email" name="email" placeholder="Enter Email">
-                    <input type="password" name="" placeholder="Enter Password">
-                    <button class="btnn"><a href="#">Login</a></button>
-
-                    <p class="link">Don't have an account?<br>
-                    <a href="#">Sign up </a> here</a></p>
-                    <p class="liw">Log in with</p>
-
-                    <div class="icons">
-                        <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
-                        <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
-                        <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
-                        <a href="#"><ion-icon name="logo-google"></ion-icon></a>
-                        <a href="#"><ion-icon name="logo-skype"></ion-icon></a>
-                    </div>
-
-                </div>
-                    </div>
-                </div>
-        </div>
-    </div>
-    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
+
